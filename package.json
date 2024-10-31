@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "packageManager": "pnpm@9.4.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate:edgeql": "pnpm exec generate edgeql-js",
+    "generate:interfaces": "pnpm exec generate interfaces",
+    "generate:all": "pnpm generate:edgeql && pnpm generate:interfaces",
+    "seed": "node seed.cjs"
+  },
+  "dependencies": {
+    "@edgedb/ai": "0.1.0-alpha.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/lodash.debounce": "^4.0.9",
+    "edgedb": "1.6.0-canary.20240905T020729",
+    "lodash.debounce": "^4.0.8",
+    "next": "14.2.6",
+    "openai": "^4.69.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@edgedb/generate": "^0.5.5",
+    "@eslint/eslintrc": "2.x",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.5.0",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "6.x",
+    "@typescript-eslint/parser": "6.x",
+    "autoprefixer": "^10.4.20",
+    "esbuild-runner": "^2.2.2",
+    "eslint": "8.x",
+    "eslint-config-next": "14.1.4",
+    "eslint-config-prettier": "9.x",
+    "inquirer": "^9.2.17",
+    "postcss": "^8.4.41",
+    "prettier": "~3.3.3",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
+  }
+}
